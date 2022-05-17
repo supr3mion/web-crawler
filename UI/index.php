@@ -1,3 +1,5 @@
+<?php include('server.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +13,13 @@
     <title>login you mortal</title>
 </head>
 <body>
-    
+    <div id='loginform'>
+        <?php include('error.php'); ?>
+        <form action="index.php" method="post">
+            <p>LOGIN</p>
+            <input type="text" name='password' placeholder='password'></input>
+            <button type='submit' name='login'>LOGIN</button>
+        </form>
+    </div>
 </body>
 </html>
