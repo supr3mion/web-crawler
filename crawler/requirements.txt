@@ -4,11 +4,8 @@ DateTime==4.3
 bs4==0.0.1
 pyodbc==4.0.32
 beautifulsoup4==4.10.0
-fastapi==0.70.0
 redis==4.0.2
 random-user-agent==1.0.1
-fastapi==0.70.0
-pydantic==1.8.2
 whois==0.9.13
 lxml==4.7.1
 fastapi==0.72.0
