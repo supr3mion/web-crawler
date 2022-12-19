@@ -69,10 +69,10 @@ blacklist = ["/shoppingcart", "/shopping-cart", "/cart", "/winkelwagen", "mailto
 rp = urllib.robotparser.RobotFileParser()
 
 # opening database connection
-server = 'soldevdbs1.joure1.net'
+server = ''
 database = 'WebCrawler'
 username = 'webcrawler'
-password = 'EenSuperMoeilijkWachtwoord1234'
+password = ''
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
@@ -82,12 +82,12 @@ rootPath = ""
 
 # reddis connection setup
 # r = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)
-Elastic = redis.StrictRedis(host="192.168.253.170", port=6379, db=0, decode_responses=True)
-red = redis.StrictRedis(host="joredis.joure1.net", port=6379, db=8, decode_responses=True, password="4U2Serve")
-red.client_setname("JIP_Crawler")
-prot = redis.StrictRedis(host="joredis.joure1.net", port=6379, db=3, decode_responses=True, password="4U2Serve")
-prot.client_setname("JIP_Crawler")
-print("Connected to redis, client name set to: JIP_Crawler")
+Elastic = redis.StrictRedis(host="", port=, db=0, decode_responses=True)
+red = redis.StrictRedis(host="", port=, db=, decode_responses=True, password="")
+red.client_setname("")
+prot = redis.StrictRedis(host="", port=, db=, decode_responses=True, password="")
+prot.client_setname("")
+print("Connected to redis, client name set to: ")
 QueKey = ""
 ela_key = "Logging"
 BufQueKey = ""
