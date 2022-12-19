@@ -71,7 +71,7 @@ rp = urllib.robotparser.RobotFileParser()
 # opening database connection
 server = ''
 database = 'WebCrawler'
-username = 'webcrawler'
+username = ''
 password = ''
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
@@ -859,7 +859,7 @@ except:
 # # proxy = urllib.request.ProxyHandler(proxies)
 # proxy = urllib.request.ProxyHandler({})
 # opener = urllib.request.build_opener(proxy)
-# opener.addheaders = [('Referer', 'test'), ('Accept', '*/*'), ('User-agent', 'JIP Crawler')]
+# opener.addheaders = [('Referer', 'test'), ('Accept', '*/*'), ('User-agent', '')]
 # urllib.request.install_opener(opener)
 
 # crawler.redis_request()
